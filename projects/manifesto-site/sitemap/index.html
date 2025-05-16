@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site Map for the RAISE Manifesto Website Project">
+    <meta name="author" content="RAISE Initiative">
+    <meta name="keywords" content="RAISE, Site Map, Manifesto, Project, Methodology">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Site Map - RAISE Manifesto Website Project">
+    <meta property="og:description" content="The structural representation of the RAISE Manifesto website navigation and content flow">
+    <meta property="og:image" content="../../../images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Site Map - RAISE Manifesto Website Project">
+    <meta name="twitter:description" content="The structural representation of the RAISE Manifesto website navigation and content flow">
+    <meta name="twitter:image" content="../../../images/og-image.jpg">
+    
+    <title>Site Map - RAISE Manifesto Website Project</title>
+    
+    <!-- Favicon (using emoji as placeholder) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>ud83dude80</text></svg>">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load Google Fonts with display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../projects.css">
+    <link rel="stylesheet" href="../project.css">
+</head>
+<body>
+    <header>
+        <h1>Site Map - RAISE Manifesto Website</h1>
+        <p class="version">Last updated: <time datetime="2025-05-16">May 16, 2025</time></p>
+    </header>
+
+    <main class="project-page">
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ol>
+                <li><a href="../../../">Home</a></li>
+                <li><a href="../../">Example Projects</a></li>
+                <li><a href="../">RAISE Manifesto Website</a></li>
+                <li aria-current="page">Site Map</li>
+            </ol>
+        </nav>
+        
+        <div class="project-layout">
+            <!-- Sidebar Navigation -->
+            <aside class="project-sidebar">
+                <nav aria-label="Project Artifacts">
+                    <h2>Project Artifacts</h2>
+                    <ul>
+                        <li><a href="../vision/" class="artifact-link">Vision Document</a></li>
+                        <li><a href="../values/" class="artifact-link">Values</a></li>
+                        <li><a href="../stories/" class="artifact-link">User Stories</a></li>
+                        <li><a href="../sitemap/" class="artifact-link" aria-current="page">Site Map</a></li>
+                        <li><a href="../architecture/" class="artifact-link">Architecture Decisions</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <!-- Main Content -->
+            <div class="project-content">
+                <div class="artifact-description">
+                    <p>The Site Map articulates the information architecture and navigation flow of the RAISE Manifesto website. It guides content organization and ensures that all components work together to deliver a coherent user experience.</p>
+                </div>
+                
+                <div class="artifact-content">
+                    <h2>RAISE Manifesto Website Structure</h2>
+                    
+                    <section>
+                        <h3>Overview</h3>
+                        <p>The RAISE Manifesto website has evolved from a single-page site to a multi-page structure that includes example projects. This site map documents the organization and navigation flow of the entire site.</p>
+                    </section>
+                    
+                    <section>
+                        <h3>Site Structure</h3>
+                        <pre class="sitemap-structure">
+RAISE Manifesto Website
+│
+├── / (Homepage)
+│   ├── Header
+│   │   └── Site title, version, last updated date
+│   │
+│   ├── Manifesto Content
+│   │   ├── Introduction
+│   │   ├── Core Principles
+│   │   └── Methodology
+│   │
+│   ├── Example Projects Section
+│   │   └── Link to Projects Directory
+│   │
+│   ├── Open Questions Section
+│   │
+│   └── Footer
+│       └── Copyright, back to top link
+│
+└── /projects/ (Projects Directory)
+    │
+    ├── /index.html (Projects Overview)
+    │   ├── Breadcrumb Navigation
+    │   ├── Introduction
+    │   └── Project Cards
+    │       ├── RAISE Manifesto Website
+    │       └── [Future Projects]
+    │
+    └── /manifesto-site/ (RAISE Manifesto Website Project)
+        ├── /index.html (Project Overview)
+        │   ├── Breadcrumb Navigation
+        │   ├── Sidebar Navigation to Artifacts
+        │   ├── Project Summary
+        │   ├── Key Features
+        │   ├── Artifact Navigation Cards
+        │   └── Repository Link
+        │
+        ├── /vision/ (Vision Document)
+        │   └── index.html
+        ├── /values/ (Values Document)
+        │   └── index.html
+        ├── /stories/ (User Stories)
+        │   └── index.html
+        ├── /sitemap/ (Site Map)
+        │   └── index.html
+        └── /architecture/ (Architecture Decisions)
+            └── index.html
+                        </pre>
+                    </section>
+                    
+                    <section>
+                        <h3>Navigation Patterns</h3>
+                        
+                        <h4>Primary Navigation</h4>
+                        <ul>
+                            <li><strong>Homepage</strong>: Vertical scrolling with a focus on reading the manifesto</li>
+                            <li><strong>Project Links</strong>: Direct links from homepage to projects section</li>
+                            <li><strong>Inter-Page Navigation</strong>: Consistent breadcrumb trails showing location</li>
+                        </ul>
+                        
+                        <h4>Secondary Navigation</h4>
+                        <ul>
+                            <li><strong>Within Project Pages</strong>: Sidebar navigation to different artifacts</li>
+                            <li><strong>Back to Top</strong>: Links at the bottom of long pages</li>
+                            <li><strong>Return Navigation</strong>: Clear paths back to parent sections</li>
+                        </ul>
+                    </section>
+                    
+                    <section>
+                        <h3>Content Hierarchy</h3>
+                        <ol>
+                            <li><strong>Manifesto Content</strong>: Primary focus of the site, presented first on the homepage</li>
+                            <li><strong>Example Projects</strong>: Secondary content that demonstrates the methodology in practice</li>
+                            <li><strong>Supporting Information</strong>: Open Questions as supplemental content</li>
+                        </ol>
+                    </section>
+                    
+                    <section>
+                        <h3>Future Considerations</h3>
+                        <ul>
+                            <li><strong>Additional Example Projects</strong>: More projects will be added to the /projects/ directory as they are developed</li>
+                            <li><strong>Resources Section</strong>: Potential future expansion for templates and tools</li>
+                            <li><strong>Community Section</strong>: Possible addition for contribution guidelines and community engagement</li>
+                        </ul>
+                    </section>
+                </div>
+                
+                <p class="artifact-timestamp">This site map reflects the story-first approach of the RAISE methodology, with a clear progression from core principles (the manifesto) to practical examples (the projects section) that demonstrate implementation.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year">2025</span> RAISE Initiative. All rights reserved.</p>
+        <p><a href="../../../">Back to Home</a> | <a href="../../">Back to Projects</a> | <a href="../">Back to Project</a> | <a href="#">Back to Top</a></p>
+    </footer>
+    
+    <script>
+        // Simple script to update the year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
