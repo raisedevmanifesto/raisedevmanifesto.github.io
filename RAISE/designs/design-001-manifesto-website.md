@@ -1,6 +1,10 @@
 # Design 001: RAISE Manifesto Website
 
-This document outlines the design considerations for the RAISE Manifesto website, focusing on making the manifesto itself prominent while providing context about its origins and future.
+**Last Updated**: May 16, 2025
+
+## Overview
+
+This document outlines the design considerations for the RAISE Manifesto website, focusing on making the manifesto itself prominent while providing context about its origins and future. It builds upon the foundational design system defined in [Design 000: Design System](./design-000-design-system.md) and applies those principles to the specific needs of the manifesto presentation.
 
 ## Core Principles from User Story 001:
 
@@ -33,27 +37,78 @@ This document outlines the design considerations for the RAISE Manifesto website
 3.  **Discussion Links:**
     *   These will be placed at the very end of the page, after the "Who We Are" and "What's Next" sections. They should be clearly labeled and easy to interact with.
 
-## Visual Hierarchy & Style:
+## Visual Hierarchy & Style
 
-*   **Typography:**
-    *   **Manifesto Body:** Lora (serif), base size 18-22px. Chosen for its elegant readability, suitable for extended reading.
-    *   **Headings within Manifesto:** Open Sans (sans-serif), Bold or Semi-Bold weight. Sized appropriately larger than the body text (e.g., 1.5-2x base font size for main headings, smaller for subheadings). This provides clear contrast and modern scannability against the serif body.
-    *   **Supporting Text ("Who," "Next," Discussion Links, Version Info):** Open Sans (sans-serif), regular weight, size 14-16px. This ensures a clean, neutral presentation for secondary information.
-*   **Color Palette:**
-    *   **Background:** An off-white (e.g., `#F8F8F8` or `#FAF9F6`) or very light warm gray for the main background. This provides a softer reading experience than stark white and subtly nods to the preference for less harsh screens, without implementing a full dark mode.
-    *   **Text:** Dark gray (e.g., `#333333`) or near-black for primary text to ensure high contrast and readability.
-    *   **Accents:** A muted, trustworthy color (e.g., a desaturated blue or green) for links and an occasional highlight, used sparingly. The color should align with simplicity and transparency values.
-*   **Spacing:** Generous leading (line-height) for manifesto text (e.g., 1.6-1.8). Ample margins around the main content block and paragraph spacing to prevent a cramped feel.
-*   **Simplicity:** No unnecessary images, animations, or complex UI elements. The design should be "invisible" and let the content shine. Decorative elements, if any, should be extremely subtle and purposeful.
+### Typography Implementation
+
+Following the design system's font choices and type scale:
+
+* **Manifesto Body:** Lora (serif) at `--font-size-md` (1.2rem/~19px), providing elegant readability for extended content
+* **Headings within Manifesto:** 
+  * Main heading (h1): Open Sans at `--font-size-2xl` (2.074rem/~33px)
+  * Section headings (h2): Open Sans at `--font-size-xl` (1.728rem/~28px)
+  * Subsection headings (h3): Open Sans at `--font-size-lg` (1.44rem/~23px)
+* **Supporting Text:** Open Sans at `--font-size-sm` (1rem/16px) for secondary information
+
+### Color Application
+
+Implementing the design system's color palette:
+
+* **Background:** `--color-background` (#FAF9F6) for the main background, providing a softer reading experience
+* **Text:** `--color-text` (#333333) for primary text, ensuring readability
+* **Headings:** `--color-headings` (#222222) for strong visual hierarchy
+* **Accents & Links:** `--color-accent` (#546A7B) used sparingly for links and highlights
+* **Secondary Content:** Supporting sections use `--color-supporting-bg` (#F8F8F8) to differentiate from main content
+
+### Spacing System
+
+Utilizing the design system's spacing scale:
+
+* **Line Height:** 1.6 for body text (1.8 for manifesto content) to enhance readability
+* **Content Margins:** `--space-md` (1rem) on mobile, increasing to `--space-xl` (2rem) on larger screens
+* **Paragraph Spacing:** `--space-lg` (1.5rem) between paragraphs
+* **Section Spacing:** `--space-2xl` (3rem) between major sections
+
+### Simplicity & Focus
+
+Aligning with RAISE values:
+
+* No unnecessary decorative elements or complex UI components
+* Clean, minimal design letting content take center stage
+* Subtle visual separation between content sections
+* Responsive adjustments that maintain content integrity at all sizes
 
 ## Navigation:
 
 *   **Primary Navigation:** Essentially, none beyond scrolling. If the manifesto becomes very long, consider subtle in-page anchor links for major sections, perhaps presented as a simple table of contents at the beginning or as sticky section headers that appear on scroll.
 *   **Secondary Navigation (to "Who," "Next," "Discuss"):** Achieved by scrolling to these sections on the same page. Clear headings for these sections will be crucial.
 
-## Responsiveness:
+## Responsive Implementation
 
-*   The design must be fully responsive. A single-column layout will be enforced for mobile and tablet views, ensuring readability and ease of scrolling. Text will reflow, and font sizes may adjust slightly for smaller screens.
+Applying the design system's responsive approach:
+
+### Desktop and Larger Tablets
+
+* Maximum content width of `--content-max-width` (800px) for optimal readability
+* Centered content with white space on either side
+* Full type scale as defined in the design system
+* Comfortable spacing between elements
+* Two-column layout for supplemental sections where appropriate
+
+### Mobile and Smaller Tablets
+
+* Single column layout with comfortable side margins (`--space-md`)
+* Slightly reduced font sizes, following the responsive adjustments in the design system
+* Preserved spacing hierarchy, scaled appropriately for smaller screens
+* Consistent content availability across all devices
+* Touch-friendly sizing for interactive elements (minimum 44×44px)
+
+### Breakpoints
+
+Following the design system's defined breakpoints:
+
+* Adjustments at 600px for mobile to tablet transition
+* Adjustments at 900px for tablet to desktop transition
 
 ## Accessibility (A11y)
 

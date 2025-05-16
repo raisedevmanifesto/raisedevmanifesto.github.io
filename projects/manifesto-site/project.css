@@ -1,0 +1,396 @@
+/* CSS for individual project pages - Following design principles */
+
+/* Project Page */
+.project-page {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 var(--space-md);
+    box-sizing: border-box;
+}
+
+/* Project Layout */
+.project-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive grid for larger screens */
+@media (min-width: 900px) {
+    .project-layout {
+        grid-template-columns: 250px 1fr;
+    }
+}
+
+/* Sidebar Navigation */
+.project-sidebar {
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    padding: 1rem;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 900px) {
+    .project-sidebar {
+        position: sticky;
+        top: 2rem;
+        align-self: start;
+        margin-bottom: 0;
+    }
+}
+
+.project-sidebar h2 {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #222222;
+}
+
+.project-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-sidebar li {
+    margin-bottom: 0.25rem;
+}
+
+.artifact-link {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background-color 150ms ease-in-out,
+                color 150ms ease-in-out;
+}
+
+.artifact-link:hover,
+.artifact-link:focus {
+    background-color: rgba(0,0,0,0.05);
+    color: #546A7B;
+}
+
+.artifact-link[aria-current="page"] {
+    background-color: #546A7B;
+    color: white;
+    font-weight: 600;
+}
+
+/* Project Content */
+.project-content {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.project-content h2 {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #222222;
+    line-height: 1.2;
+}
+
+.project-content h3 {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #222222;
+    line-height: 1.3;
+}
+
+.project-content h4 {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222222;
+    line-height: 1.3;
+}
+
+.project-content section {
+    margin-bottom: 2rem;
+}
+
+.project-content p {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.project-content ul, 
+.project-content ol {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.project-content li {
+    margin-bottom: 0.5rem;
+}
+
+/* Artifact Cards */
+.artifact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.artifact-card {
+    display: block;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+    transition: transform 300ms ease-in-out,
+                box-shadow 300ms ease-in-out;
+}
+
+.artifact-card:hover,
+.artifact-card:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #333;
+    text-decoration: none;
+}
+
+.artifact-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    color: #546A7B;
+}
+
+.artifact-card p {
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2.5rem;
+    margin-left: 0.5rem;
+    list-style: none;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 7px;
+    height: 100%;
+    width: 2px;
+    background-color: #E0E0E0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-date {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #546A7B;
+}
+
+.timeline-content {
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    padding: 1rem;
+    border-left: 3px solid #546A7B;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #222222;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    top: 5px;
+    left: -2.5rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #546A7B;
+    z-index: 1;
+}
+
+.timeline-content h4 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-content time {
+    display: block;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+    margin-bottom: 0;
+}
+
+/* Repository Section */
+.project-repository {
+    border-top: 1px solid #E0E0E0;
+    padding-top: 1.5rem;
+    margin-top: 3rem;
+}
+
+.repo-container {
+    background-color: #F8F8F8;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.repo-link {
+    display: flex;
+    align-items: center;
+    color: #546A7B;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    text-decoration: none;
+    transition: color 150ms ease-in-out;
+}
+
+.repo-link:hover,
+.repo-link:focus {
+    color: #3E5061;
+    text-decoration: underline;
+}
+
+.repo-icon {
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+    fill: currentColor;
+}
+
+.repo-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 1rem;
+}
+
+/* Legacy Repository Link - Kept for backwards compatibility */
+.repo-link:not(.project-repository .repo-link),
+.github-link {
+    display: inline-block;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #F8F8F8;
+    color: #546A7B;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #E0E0E0;
+    transition: background-color 150ms ease-in-out;
+}
+
+.repo-link:not(.project-repository .repo-link):hover,
+.repo-link:not(.project-repository .repo-link):focus,
+.github-link:hover,
+.github-link:focus {
+    background-color: white;
+    text-decoration: underline;
+}
+
+/* Artifact Content Specific Styles */
+.artifact-content {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.artifact-description {
+    font-style: italic;
+    color: #666;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.artifact-timestamp {
+    display: block;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 2rem;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.25rem;
+    }
+    
+    .project-content p,
+    .project-content ul,
+    .project-content ol {
+        font-size: 1rem;
+    }
+    
+    .artifact-nav li {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .artifact-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-content h2 {
+        font-size: 1.4rem;
+    }
+    
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-content p,
+    .project-content ul,
+    .project-content ol {
+        font-size: 0.95rem;
+    }
+}

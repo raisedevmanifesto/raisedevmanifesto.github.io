@@ -1,0 +1,151 @@
+/* CSS for Projects Directory - Following RAISE design system */
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+    margin-bottom: var(--space-xl);
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: var(--font-size-sm);
+}
+
+.breadcrumb ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb li {
+    display: inline;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    content: "/";
+    margin: 0 var(--space-sm);
+    color: var(--color-text-tertiary);
+}
+
+.breadcrumb a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+    text-decoration: underline;
+}
+
+/* Introduction Section */
+.introduction {
+    margin-bottom: var(--space-xl);
+    font-family: 'Lora', Georgia, serif;
+    font-size: var(--font-size-md);
+    line-height: 1.6;
+    max-width: 45em;
+}
+
+/* Project Cards */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-bottom: var(--space-2xl);
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    padding: var(--space-lg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: transform var(--transition-medium) ease-in-out, 
+                box-shadow var(--transition-medium) ease-in-out;
+}
+
+.project-card:hover,
+.project-card:focus-within {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: var(--font-size-lg);
+    margin-top: 0;
+    margin-bottom: var(--space-sm);
+    line-height: 1.3;
+}
+
+.project-card h3 a {
+    color: var(--color-headings);
+    text-decoration: none;
+}
+
+.project-card h3 a:hover,
+.project-card h3 a:focus {
+    color: var(--color-link);
+    text-decoration: underline;
+}
+
+.project-card p {
+    font-family: 'Lora', Georgia, serif;
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    margin-bottom: var(--space-lg);
+    flex-grow: 1; /* Push footer to bottom */
+}
+
+.project-card footer {
+    margin-top: auto;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: var(--font-size-xs);
+    padding: 0;
+    background: none;
+    color: var(--color-text);
+}
+
+.project-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.project-features li {
+    background-color: var(--color-supporting-bg);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 3px;
+}
+
+/* Future Card Styling */
+.future-card {
+    border-style: dashed;
+    background-color: var(--color-supporting-bg);
+}
+
+.contact-link {
+    color: var(--color-link);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .project-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .introduction {
+        font-size: var(--font-size-sm);
+    }
+}
