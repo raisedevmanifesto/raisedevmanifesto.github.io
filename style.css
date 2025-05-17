@@ -286,3 +286,11 @@ img, iframe, video {
     background-color: var(--color-accent-dark);
     text-decoration: none;
 }
+
+/* Helper styles */
+.note {
+    font-size: var(--font-size-xs);
+    color: var(--color-accent);
+    font-style: italic;
+    margin-left: var(--space-xs);
+}

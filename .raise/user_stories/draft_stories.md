@@ -86,8 +86,6 @@ These stories are under consideration for future iterations of the RAISE Manifes
 
 ---
 
----
-
 ## Provide Discussion Links
 
 **As a** reader of the RAISE Manifesto,
