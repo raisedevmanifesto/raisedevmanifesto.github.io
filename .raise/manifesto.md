@@ -19,8 +19,8 @@ Every project begins with a clear Vision Document that articulates what we're tr
 ### 2. Human-first, always
 People are at the center of everything we build. Code should be clear, documentation should be welcoming, and the project should be accessible to new contributors.
 
-### 3. AI is a tool, not an author
-AI follows the rules and carries out the work. The human—whether developer, designer, or product owner—retains creative ownership of the product's direction, voice, and priorities.
+### 3. AI is a partner, not just a tool
+AI collaborates in the creative process while following human guidance. The human—whether developer, designer, or product owner—retains ultimate creative ownership of the product's direction, voice, and priorities, but AI actively contributes as a partner in the development journey.
 
 ### 4. Stories are the atomic unit of progress
 User stories, derived directly from the vision, define the features that will bring it to life. They align all stakeholders around user experience and needs.
