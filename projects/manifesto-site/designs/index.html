@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design Decisions for the RAISE Manifesto Website Project">
+    <meta name="author" content="RAISE Initiative">
+    <meta name="keywords" content="RAISE, Design Decisions, Manifesto, Project, Methodology">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Design Decisions - RAISE Manifesto Website Project">
+    <meta property="og:description" content="The visual and interaction blueprints for the RAISE Manifesto website user experience">
+    <meta property="og:image" content="../../../images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Design Decisions - RAISE Manifesto Website Project">
+    <meta name="twitter:description" content="The visual and interaction blueprints for the RAISE Manifesto website user experience">
+    <meta name="twitter:image" content="../../../images/og-image.jpg">
+    
+    <title>Design Decisions - RAISE Manifesto Website Project</title>
+    
+    <!-- Favicon (using emoji as placeholder) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Load Google Fonts with display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../projects.css">
+    <link rel="stylesheet" href="../project.css">
+</head>
+<body>
+    <header>
+        <h1>Design Decisions - RAISE Manifesto Website</h1>
+        <p class="version">Last updated: <time datetime="2025-05-16">May 16, 2025</time></p>
+    </header>
+
+    <main class="project-page">
+        <!-- Breadcrumb Navigation -->
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ol>
+                <li><a href="../../../">Home</a></li>
+                <li><a href="../../">Example Projects</a></li>
+                <li><a href="../">RAISE Manifesto Website</a></li>
+                <li aria-current="page">Design Decisions</li>
+            </ol>
+        </nav>
+        
+        <div class="project-layout">
+            <!-- Sidebar Navigation -->
+            <aside class="project-sidebar">
+                <nav aria-label="Project Artifacts">
+                    <h2>Project Artifacts</h2>
+                    <ul>
+                        <li><a href="../vision/" class="artifact-link">Vision Document</a></li>
+                        <li><a href="../values/" class="artifact-link">Values</a></li>
+                        <li><a href="../stories/" class="artifact-link">User Stories</a></li>
+                        <li><a href="../designs/" class="artifact-link" aria-current="page">Design Decisions</a></li>
+                        <li><a href="../sitemap/" class="artifact-link">Site Map</a></li>
+                        <li><a href="../architecture/" class="artifact-link">Architecture Decisions</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <!-- Main Content -->
+            <div class="project-content">
+                <div class="artifact-description">
+                    <p>These Design Decisions document the visual and interaction choices that shaped the RAISE Manifesto website. They translate our intention and values into tangible user experience elements, ensuring consistency and purpose.</p>
+                </div>
+                
+                <div class="artifact-content">
+                    <h2>Design System & Visual Language</h2>
+                    
+                    <section>
+                        <h3>Typography Choices</h3>
+                        <p>Typography forms the foundation of our design system, setting the tone for the entire experience while ensuring accessibility and readability.</p>
+                        
+                        <div class="design-example">
+                            <h4>Primary Font: Open Sans</h4>
+                            <p>Used for body text, navigation, and UI elements to ensure clarity and readability.</p>
+                            <div class="font-sample" style="font-family: 'Open Sans', sans-serif;">
+                                <p style="font-weight: 400;">The quick brown fox jumps over the lazy dog. (Regular 400)</p>
+                                <p style="font-weight: 600;">The quick brown fox jumps over the lazy dog. (Semibold 600)</p>
+                                <p style="font-weight: 700;">The quick brown fox jumps over the lazy dog. (Bold 700)</p>
+                            </div>
+                            <p class="design-rationale"><strong>Rationale:</strong> Open Sans was selected for its exceptional legibility at various sizes across devices, its clean and neutral character that doesn't distract from content, and its complete character set supporting multiple languages.</p>
+                        </div>
+                        
+                        <div class="design-example">
+                            <h4>Secondary Font: Lora</h4>
+                            <p>Used for headings and key statements to provide a distinctive, authoritative voice.</p>
+                            <div class="font-sample" style="font-family: 'Lora', serif;">
+                                <p style="font-weight: 400;">The quick brown fox jumps over the lazy dog. (Regular 400)</p>
+                                <p style="font-weight: 600;">The quick brown fox jumps over the lazy dog. (Semibold 600)</p>
+                                <p style="font-weight: 700;">The quick brown fox jumps over the lazy dog. (Bold 700)</p>
+                            </div>
+                            <p class="design-rationale"><strong>Rationale:</strong> Lora provides a perfect balance to Open Sans with its slightly more formal, serif characteristics. It adds gravitas to headings while maintaining excellent readability, and its subtle details enhance the hierarchy without overwhelming the design.</p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h3>Color System</h3>
+                        <p>Our color system is intentionally minimal, focusing on readability and contrast while creating a calm, focused reading environment.</p>
+                        
+                        <div class="design-example">
+                            <h4>Primary Colors</h4>
+                            <div class="color-palette">
+                                <div class="color-sample" style="background-color: #FAF9F6; color: #333333; border: 1px solid #E5E5E5;">
+                                    <p>Background<br>#FAF9F6</p>
+                                </div>
+                                <div class="color-sample" style="background-color: #333333; color: #FFFFFF;">
+                                    <p>Text<br>#333333</p>
+                                </div>
+                            </div>
+                            <p class="design-rationale"><strong>Rationale:</strong> The off-white background (#FAF9F6) reduces eye strain compared to pure white, while the dark gray text (#333333) provides strong contrast without the harshness of pure black, aligning with our accessibility value.</p>
+                        </div>
+                        
+                        <div class="design-example">
+                            <h4>Accent Colors</h4>
+                            <div class="color-palette">
+                                <div class="color-sample" style="background-color: #0056b3; color: #FFFFFF;">
+                                    <p>Link Blue<br>#0056b3</p>
+                                </div>
+                                <div class="color-sample" style="background-color: #004085; color: #FFFFFF;">
+                                    <p>Link Hover<br>#004085</p>
+                                </div>
+                            </div>
+                            <p class="design-rationale"><strong>Rationale:</strong> Our link colors follow conventional web patterns for immediate recognition while ensuring WCAG AA+ contrast ratios against our background colors. The slightly darker hover state provides clear feedback for interactive elements.</p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h3>Layout Principles</h3>
+                        <p>Our layout system embodies the simplicity value while creating clear hierarchy and focus on content.</p>
+                        
+                        <div class="design-example">
+                            <h4>Content Width & Readability</h4>
+                            <p>Main content areas are constrained to a maximum width of 800px for optimal readability, with appropriate padding on smaller screens.</p>
+                            <p class="design-rationale"><strong>Rationale:</strong> Research indicates that line lengths of 65-75 characters are optimal for reading comprehension. Our content width constraint ensures text remains within this ideal range on larger screens while adapting appropriately to smaller viewports.</p>
+                        </div>
+                        
+                        <div class="design-example">
+                            <h4>Whitespace Hierarchy</h4>
+                            <p>We use a consistent pattern of whitespace to establish hierarchy: more space before elements than after them, creating clear grouping and separation.</p>
+                            <p class="design-rationale"><strong>Rationale:</strong> This pattern creates natural visual grouping, helping readers understand the relationship between different content sections without requiring explicit visual borders or background changes, supporting our simplicity value.</p>
+                        </div>
+                    </section>
+                    
+                    <section>
+                        <h3>Responsive Approach</h3>
+                        <p>The site is designed with a mobile-first methodology, ensuring the experience scales appropriately across all devices.</p>
+                        
+                        <div class="design-example">
+                            <h4>Key Breakpoints</h4>
+                            <ul>
+                                <li><strong>Base/Mobile:</strong> Up to 640px</li>
+                                <li><strong>Tablet:</strong> 641px - 1024px</li>
+                                <li><strong>Desktop:</strong> 1025px and above</li>
+                            </ul>
+                            <p class="design-rationale"><strong>Rationale:</strong> Rather than targeting specific devices, our breakpoints are chosen based on content needs. The design starts with the essential content experience for small screens and progressively enhances layout and navigation as screen space increases.</p>
+                        </div>
+                        
+                        <div class="design-example">
+                            <h4>Navigation Adaptation</h4>
+                            <p>Navigation elements adapt based on available screen space, with a simplified vertical organization on mobile that transforms to horizontal layouts on larger screens.</p>
+                            <p class="design-rationale"><strong>Rationale:</strong> This approach ensures navigation remains accessible at all sizes while making efficient use of screen real estate, prioritizing content while maintaining wayfinding context.</p>
+                        </div>
+                    </section>
+                </div>
+                
+                <p class="artifact-timestamp">These design decisions were established at project inception and guide all visual and interaction implementation to maintain consistency and purpose.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year">2025</span> RAISE Initiative. All rights reserved.</p>
+        <p><a href="../../../">Back to Home</a> | <a href="../../">Back to Projects</a> | <a href="../">Back to Project</a> | <a href="#">Back to Top</a></p>
+    </footer>
+    
+    <script>
+        // Simple script to update the year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
