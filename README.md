@@ -1,6 +1,6 @@
 # RAISE Manifesto Website
 
-## Rules and AI for Story-first Engineering
+## Rules and AI for Intention-driven Software Engineering
 
 This repository contains the RAISE Manifesto website, which documents and demonstrates the RAISE methodology for building better software with AI assistance.
 
