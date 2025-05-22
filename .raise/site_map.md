@@ -23,10 +23,24 @@ RAISE Manifesto Website
 │   ├── Example Projects Section
 │   │   └── Link to Projects Directory
 │   │
+│   ├── Blog Section
+│   │   └── Link to Blog Index
+│   │
 │   ├── Open Questions Section
 │   │
 │   └── Footer
 │       └── Copyright, back to top link
+│
+├── /blog/ (Blog)
+│   ├── /index.html (Blog Index)
+│   │   ├── List of Published Posts
+│   │   ├── Optional: Filters/tags, summaries
+│   │
+│   └── /[post-slug]/ (Individual Blog Post)
+│       └── index.html
+│           ├── Blog Content (converted from markdown)
+│           ├── Metadata (title, author, date)
+│           ├── Navigation links (back to blog, next/previous)
 │
 └── /projects/ (Projects Directory)
     │
