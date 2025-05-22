@@ -10,10 +10,10 @@ We want to add a blog/story section to the RAISE Manifesto website. Blog posts s
 
 ## Decision
 
-- Create a directory (`.raise/blog_src/`) containing markdown files for each story/post.
+- Create a directory (`blog_src/`) containing markdown files for each story/post.
 - These markdown files are source artifacts and are not published as-is.
 - An AI or automated process will convert these markdown files into HTML pages with site styling and navigation, placing them in a `blog/` directory for publication.
-- Drafts and unpublished posts remain only in `.raise/blog_src/` until promoted.
+- Drafts and unpublished posts remain only in `blog_src/` until promoted.
 - This supports editorial workflows and provides a clear separation between source and published content.
 
 ## Consequences
