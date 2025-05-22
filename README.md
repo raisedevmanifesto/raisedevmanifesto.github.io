@@ -14,20 +14,24 @@ The methodology emphasizes:
 - Narrative clarity fuels technical clarity
 - Living artifacts form the backbone of high-integrity engineering
 
-## Project Structure
+## Project Structure & Sitemap
 
 This site is organized according to RAISE principles, with the following key sections:
 
 - `/` - Root contains the main manifesto document
 - `/projects/` - Example projects demonstrating RAISE methodology
 - `/blog/` - Published blog stories, generated as HTML from markdown sources
-- `/.raise/` - Source artifacts that drive the site development
+- `/.raise/` - Source artifacts that drive site development and publishing workflows
     - `.raise/blog_src/` - Blog/story drafts and posts written in markdown (not published directly)
-    - `.raise/adr/` - Architectural Decision Records
+    - `.raise/designs/` - Design documents (see `design-003-blog-section.md` for blog design)
+    - `.raise/architecture/` - Architectural Decision Records (see `adr-004-blog-content-flow.md` for blog publishing ADR)
 
-### Blog Story Flow
-
-Blog posts are drafted as markdown files in `.raise/blog_src/`. When ready, an AI process converts these into HTML pages, which are published in `/blog/`. This enables editorial review, automated formatting, and consistent site design.
+**Blog Story Flow:**
+- Blog posts are created and edited as markdown files in `.raise/blog_src/`.
+- When ready for publication, an AI (or automated) process converts the markdown files into styled HTML pages, which are published in `/blog/`.
+- Design and rationale for this flow can be found in:
+    - `.raise/designs/design-003-blog-section.md` (design)
+    - `.raise/architecture/adr-004-blog-content-flow.md` (ADR)
 
 ## Implementation Details
 
