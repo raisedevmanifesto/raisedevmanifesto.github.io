@@ -20,7 +20,14 @@ This site is organized according to RAISE principles, with the following key sec
 
 - `/` - Root contains the main manifesto document
 - `/projects/` - Example projects demonstrating RAISE methodology
+- `/blog/` - Published blog stories, generated as HTML from markdown sources
 - `/.raise/` - Source artifacts that drive the site development
+    - `.raise/blog_src/` - Blog/story drafts and posts written in markdown (not published directly)
+    - `.raise/adr/` - Architectural Decision Records
+
+### Blog Story Flow
+
+Blog posts are drafted as markdown files in `.raise/blog_src/`. When ready, an AI process converts these into HTML pages, which are published in `/blog/`. This enables editorial review, automated formatting, and consistent site design.
 
 ## Implementation Details
 
