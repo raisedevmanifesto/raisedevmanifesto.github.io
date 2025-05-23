@@ -28,25 +28,21 @@ Based on our user stories and site evolution, visitors need:
 
 ## Primary Navigation Design
 
-### Global Top Navigation Bar
+### Breadcrumb-Only Navigation Strategy
 
-Present on all pages except the homepage (to maintain manifesto focus):
+To maintain content focus and minimal visual overhead, the site uses breadcrumb navigation as the primary wayfinding mechanism:
 
-```html
-<nav class="top-nav">
-    <ul class="site-nav">
-        <li><a href="../">Manifesto</a></li>
-        <li><a href="../projects/">Projects</a></li>
-        <li><a href="../blog/">Blog</a></li>
-    </ul>
-</nav>
-```
+**All non-homepage pages include breadcrumb navigation**:
+- **Format**: Home > Section > Subsection
+- **Placement**: Below header, above main content
+- **Styling**: Follows design system breadcrumb component
+- **Behavior**: Each level is clickable for quick navigation
 
-**Visual Design**:
-- Clean, minimal horizontal bar
-- Follows design system typography and spacing
-- Active state indicator for current section
-- Hover effects consistent with design system
+This approach:
+- Maintains clean, uncluttered layouts
+- Provides clear navigation context without competing with content
+- Takes up minimal vertical space
+- Follows the "clarity over complexity" principle central to RAISE
 
 ### Homepage Navigation Strategy
 
@@ -71,18 +67,15 @@ Used on all non-homepage pages:
 ### Project Section Navigation
 
 **Project Index Page**:
-- Top navigation bar
 - Breadcrumb: Home > Projects
 - Project cards linking to individual projects
 
 **Individual Project Pages**:
-- Top navigation bar
 - Breadcrumb: Home > Projects > [Project Name]
 - Sidebar navigation between project artifacts
 - Return links to project overview
 
 **Project Artifact Pages**:
-- Top navigation bar
 - Breadcrumb: Home > Projects > [Project Name] > [Artifact]
 - Sidebar navigation between artifacts
 - Return links to project overview
@@ -90,20 +83,17 @@ Used on all non-homepage pages:
 ### Blog Section Navigation
 
 **Blog Index Page**:
-- Top navigation bar
 - Breadcrumb: Home > Blog
 - Article cards linking to individual posts
 
 **Individual Blog Posts**:
-- Top navigation bar
 - Breadcrumb: Home > Blog > [Post Title]
 - Return link to blog index
 
 ## Navigation States and Indicators
 
 ### Active States
-- **Current section**: Highlighted in top navigation
-- **Current page**: Indicated in breadcrumbs
+- **Current page**: Indicated in breadcrumbs (non-linked final item)
 - **Sidebar navigation**: Active artifact highlighted
 
 ### Hover States
@@ -121,12 +111,10 @@ Used on all non-homepage pages:
 Follows the design system breakpoints:
 
 ### Mobile
-- Top navigation remains horizontal but may stack if needed
 - Breadcrumbs remain visible but may abbreviate on very small screens
 - Sidebar navigation converts to top-of-page navigation on project pages
 
 ### Tablet and Desktop
-- Full horizontal top navigation
 - Complete breadcrumb trails
 - Sidebar navigation remains in sidebar for projects
 
@@ -138,8 +126,6 @@ Follows the design system breakpoints:
 - Proper heading hierarchy integration
 
 ### CSS Classes
-- `.top-nav` for primary navigation container
-- `.site-nav` for navigation list
 - `.breadcrumb` for breadcrumb navigation
 - `.sidebar-nav` for project artifact navigation
 
@@ -164,7 +150,7 @@ Follows the design system breakpoints:
 ## Future Considerations
 
 ### Potential Enhancements
-- Search functionality in top navigation
+- Search functionality (could be added to header area)
 - "Recently viewed" or "Related" navigation aids
 - Tag-based navigation for blog posts
 - Quick-access menu for frequent artifact types
