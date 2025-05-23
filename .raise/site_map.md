@@ -1,6 +1,6 @@
 # RAISE Manifesto Website Sitemap
 
-**Last Updated**: May 16, 2025
+**Last Updated**: May 23, 2025
 
 ## Overview
 
@@ -28,56 +28,73 @@ RAISE Manifesto Website
 │   └── Footer
 │       └── Copyright, back to top link
 │
-└── /projects/ (Projects Directory)
+├── /projects/ (Projects Directory)
+│   │
+│   ├── /index.html (Projects Overview)
+│   │   ├── Breadcrumb Navigation
+│   │   ├── Introduction
+│   │   └── Project Cards
+│   │       ├── RAISE Manifesto Website
+│   │       └── [Future Projects]
+│   │
+│   └── /manifesto-site/ (RAISE Manifesto Website Project)
+│        ├── /index.html (Project Overview)
+│        │   ├── Breadcrumb Navigation
+│        │   ├── Sidebar Navigation to Artifacts
+│        │   ├── Project Summary
+│        │   ├── Key Features
+│        │   ├── Development Timeline
+│        │   ├── Artifact Navigation Cards
+│        │   └── Repository Link
+│        │
+│        ├── /vision/ (Vision Document)
+│        │   └── index.html
+│        ├── /values/ (Values Document)
+│        │   └── index.html
+│        ├── /stories/ (User Stories)
+│        │   └── index.html
+│        ├── /sitemap/ (Site Map)
+│        │   └── index.html
+│        └── /architecture/ (Architecture Decisions)
+│            └── index.html
+│
+└── /blog/ (Blog Directory)
     │
-    ├── /index.html (Projects Overview)
+    ├── /index.html (Blog Overview/Listing)
     │   ├── Breadcrumb Navigation
-    │   ├── Introduction
-    │   └── Project Cards
-    │       ├── RAISE Manifesto Website
-    │       └── [Future Projects]
+    │   ├── Introduction/Description of Blog
+    │   └── Blog Post Entries (Title, Date, Summary, Link to full post)
     │
-    └── /manifesto-site/ (RAISE Manifesto Website Project)
-        ├── /index.html (Project Overview)
-        │   ├── Breadcrumb Navigation
-        │   ├── Sidebar Navigation to Artifacts
-        │   ├── Project Summary
-        │   ├── Key Features
-        │   ├── Development Timeline
-        │   ├── Artifact Navigation Cards
-        │   └── Repository Link
-        │
-        ├── /vision/ (Vision Document)
-        │   └── index.html
-        ├── /values/ (Values Document)
-        │   └── index.html
-        ├── /stories/ (User Stories)
-        │   └── index.html
-        ├── /sitemap/ (Site Map)
-        │   └── index.html
-        └── /architecture/ (Architecture Decisions)
-            └── index.html
+    └── /posts/ (Individual Blog Posts)
+        ├── /YYYY-MM-DD/post-slug-1/
+        │   └── index.html (Full Blog Post Content)
+        └── /YYYY-MM-DD/post-slug-2/
+            └── index.html (Full Blog Post Content)
 ```
 
 ## Navigation Patterns
 
 ### Primary Navigation
-
-- **Homepage**: Vertical scrolling with a focus on reading the manifesto
-- **Project Links**: Direct links from homepage to projects section
+- **Top Navigation Bar**: Links to Homepage (Manifesto), Projects, Blog
+  - Present on all pages except homepage (maintains manifesto focus)
+  - Consistent placement and styling across sections
+- **Homepage**: Manifesto-first approach with section CTAs and footer links
 - **Inter-Page Navigation**: Consistent breadcrumb trails showing location
 
 ### Secondary Navigation
-
+- **Breadcrumb Navigation**: Present on all non-homepage pages
 - **Within Project Pages**: Sidebar navigation to different artifacts
 - **Back to Top**: Links at the bottom of long pages
 - **Return Navigation**: Clear paths back to parent sections
 
+For comprehensive navigation design details, see [Navigation System Design](designs/design-004-navigation-system.md).
+
 ## Content Hierarchy
 
 1. **Manifesto Content**: Primary focus of the site, presented first on the homepage
-2. **Example Projects**: Secondary content that demonstrates the methodology in practice
-3. **Supporting Information**: Open Questions as supplemental content
+2. **Blog Content**: News, updates, and articles.
+3. **Example Projects**: Secondary content that demonstrates the methodology in practice
+4. **Supporting Information**: Open Questions as supplemental content
 
 ## Future Considerations
 
@@ -85,4 +102,4 @@ RAISE Manifesto Website
 - **Resources Section**: Potential future expansion for templates and tools
 - **Community Section**: Possible addition for contribution guidelines and community engagement
 
-This site map reflects the story-first approach of the RAISE methodology, with a clear progression from core principles (the manifesto) to practical examples (the projects section) that demonstrate implementation.
+This site map reflects the story-first approach of the RAISE methodology, with a clear progression from core principles (the manifesto) to practical examples (the projects section) that demonstrate implementation, and timely updates via the blog.

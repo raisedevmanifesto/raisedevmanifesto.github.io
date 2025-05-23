@@ -80,8 +80,11 @@ Aligning with RAISE values:
 
 ## Navigation:
 
-*   **Primary Navigation:** Essentially, none beyond scrolling. If the manifesto becomes very long, consider subtle in-page anchor links for major sections, perhaps presented as a simple table of contents at the beginning or as sticky section headers that appear on scroll.
-*   **Secondary Navigation (to "Who," "Next," "Discuss"):** Achieved by scrolling to these sections on the same page. Clear headings for these sections will be crucial.
+**Homepage Strategy:** The manifesto page maintains a focused reading experience with minimal navigation to preserve content prominence. As the site evolved to include multiple sections, navigation was redesigned:
+
+*   **Primary Navigation:** None on the homepage to maintain reading focus. Cross-section access provided via section CTAs and footer links.
+*   **Secondary Navigation:** Scrolling to sections on the same page ("Who We Are," "Example Projects," "Open Questions"). Clear headings for these sections are crucial.
+*   **Multi-Section Site:** For comprehensive navigation patterns across the full site (Projects, Blog), see [Navigation System Design](design-004-navigation-system.md).
 
 ## Responsive Implementation
 

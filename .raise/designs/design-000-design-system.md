@@ -136,9 +136,23 @@ We use a consistent spacing scale to create rhythm across the interface:
 
 ### Navigation
 
-- Clear, text-based links
+**Top Navigation Bar**:
+- Horizontal layout with consistent spacing
+- Text-based links using primary font family
+- Background: Transparent or subtle supporting background
 - Hover effect: Underline
-- Active state: Visual indicator (background or bold text)
+- Active state: Bold text or subtle background highlight
+
+**Breadcrumb Navigation**:
+- Small font size (var(--font-size-sm))
+- Separator: "/" with muted color
+- Links use standard link color
+- Current page indicated without link
+
+**Sidebar Navigation** (for project pages):
+- Vertical list layout
+- Active item highlighted with background color
+- Hover effects consistent with other navigation
 
 ## Animation & Transitions
 
@@ -150,7 +164,7 @@ We use a consistent spacing scale to create rhythm across the interface:
 
 ## Accessibility
 
-- Color contrast meets WCAG 2.1 AA standards
+- Color contrast meets Web Content Accessibility Guidelines (WCAG) 2.1 AA standards
 - Focus states are clearly visible
 - Semantic HTML structure
 - Text is resizable without breaking layouts

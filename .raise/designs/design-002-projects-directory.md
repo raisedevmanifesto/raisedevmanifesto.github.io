@@ -28,7 +28,7 @@ Based on our user stories, visitors to the Projects section need:
 
 ## Design Focus
 
-This design document focuses on the visual presentation, user experience, and implementation approach for the Projects Directory. The information architecture and URL structure are defined in the [Site Map](/RAISE/site_map.md) document.
+This design document focuses on the visual presentation, user experience, and implementation approach for the Projects Directory. The information architecture and URL structure are defined in the [Site Map](../site_map.md) document.
 
 ## Layout Strategy
 
@@ -90,20 +90,13 @@ This design document focuses on the visual presentation, user experience, and im
 
 ## Responsive Behavior
 
-- **Mobile (< 600px)**:
-  - Single column layout throughout
-  - Stacked navigation above content
-  - Full-width cards
-  
-- **Tablet (600px - 900px)**:
-  - Two-column grid for project cards
-  - Adaptive layout for project pages
-  - Sidebar navigation collapses to top on smaller tablets
-  
-- **Desktop (> 900px)**:
-  - Three-column or more grid for project cards
-  - Full two-column layout for project pages
-  - Sticky sidebar navigation
+Follows the standard breakpoints defined in the [Design System](design-000-design-system.md) with project-specific adaptations:
+
+- **Mobile**: Single column layout, stacked navigation, full-width cards
+- **Tablet**: Two-column grid for project cards, adaptive layout for project pages
+- **Desktop**: Three-column or more grid for project cards, full two-column layout for project pages, sticky sidebar navigation
+
+For comprehensive navigation patterns, see [Navigation System Design](design-004-navigation-system.md).
 
 ## Accessibility Considerations
 
