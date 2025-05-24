@@ -29,7 +29,7 @@
     <a href="#artifact-content" class="skip-link visually-hidden">Skip to content</a>
     <header>
         <h1>Site Map - RAISE Manifesto Website</h1>
-        <p class="version">Last updated: <time datetime="2025-05-16">May 16, 2025</time></p>
+        <p class="version">Last updated: <time datetime="2025-05-23">May 23, 2025</time></p>
     </header>
 
     <main id="artifact-content" class="project-page">
@@ -95,34 +95,38 @@ RAISE Manifesto Website
 │   └── Footer
 │       └── Copyright, back to top link
 │
-└── /projects/ (Projects Directory)
+├── /projects/ (Projects Directory)
+│   │
+│   ├── /index.html (Projects Overview/Listing)
+│   │   ├── Breadcrumb Navigation
+│   │   ├── Introduction/Description of Projects
+│   │   └── Project Entries (Title, Description, Summary, Link to full project)
+│   │
+│   └── /project-folders/ (Individual Project Implementations)
+│        ├── /project-name-1/
+│        │   ├── index.html (Project Overview)
+│        │   ├── /vision/ (Vision Document)
+│        │   ├── /values/ (Values Document)
+│        │   ├── /stories/ (User Stories)
+│        │   ├── /designs/ (Design Decisions)
+│        │   ├── /sitemap/ (Site Map)
+│        │   └── /architecture/ (Architecture Decisions)
+│        └── /project-name-2/
+│            ├── index.html (Project Overview)
+│            └── [Similar RAISE artifact structure]
+│
+└── /blog/ (Blog Directory)
     │
-    ├── /index.html (Projects Overview)
+    ├── /index.html (Blog Overview/Listing)
     │   ├── Breadcrumb Navigation
-    │   ├── Introduction
-    │   └── Project Cards
-    │       ├── RAISE Manifesto Website
-    │       └── [Future Projects]
+    │   ├── Introduction/Description of Blog
+    │   └── Blog Post Entries (Title, Date, Summary, Link to full post)
     │
-    └── /manifesto-site/ (RAISE Manifesto Website Project)
-        ├── /index.html (Project Overview)
-        │   ├── Breadcrumb Navigation
-        │   ├── Sidebar Navigation to Artifacts
-        │   ├── Project Summary
-        │   ├── Key Features
-        │   ├── Artifact Navigation Cards
-        │   └── Repository Link
-        │
-        ├── /vision/ (Vision Document)
-        │   └── index.html
-        ├── /values/ (Values Document)
-        │   └── index.html
-        ├── /stories/ (User Stories)
-        │   └── index.html
-        ├── /sitemap/ (Site Map)
-        │   └── index.html
-        └── /architecture/ (Architecture Decisions)
-            └── index.html
+    └── /posts/ (Individual Blog Posts)
+        ├── /YYYY-MM-DD/post-slug-1/
+        │   └── index.html (Full Blog Post Content)
+        └── /YYYY-MM-DD/post-slug-2/
+            └── index.html (Full Blog Post Content)
                         </pre>
                     </section>
                     
@@ -131,23 +135,32 @@ RAISE Manifesto Website
                         
                         <h4>Primary Navigation</h4>
                         <ul>
-                            <li><strong>Homepage</strong>: Vertical scrolling with a focus on reading the manifesto</li>
-                            <li><strong>Project Links</strong>: Direct links from homepage to projects section</li>
+                            <li><strong>Top Navigation Bar</strong>: Links to Homepage (Manifesto), Projects, Blog
+                                <ul>
+                                    <li>Present on all pages except homepage (maintains manifesto focus)</li>
+                                    <li>Consistent placement and styling across sections</li>
+                                </ul>
+                            </li>
+                            <li><strong>Homepage</strong>: Manifesto-first approach with section CTAs and footer links</li>
                             <li><strong>Inter-Page Navigation</strong>: Consistent breadcrumb trails showing location</li>
                         </ul>
                         
                         <h4>Secondary Navigation</h4>
                         <ul>
+                            <li><strong>Breadcrumb Navigation</strong>: Present on all non-homepage pages</li>
                             <li><strong>Within Project Pages</strong>: Sidebar navigation to different artifacts</li>
                             <li><strong>Back to Top</strong>: Links at the bottom of long pages</li>
                             <li><strong>Return Navigation</strong>: Clear paths back to parent sections</li>
                         </ul>
+                        
+                        <p>For comprehensive navigation design details, see <a href="../designs/">Navigation System Design</a>.</p>
                     </section>
                     
                     <section>
                         <h3>Content Hierarchy</h3>
                         <ol>
                             <li><strong>Manifesto Content</strong>: Primary focus of the site, presented first on the homepage</li>
+                            <li><strong>Blog Content</strong>: News, updates, and articles.</li>
                             <li><strong>Example Projects</strong>: Secondary content that demonstrates the methodology in practice</li>
                             <li><strong>Supporting Information</strong>: Open Questions as supplemental content</li>
                         </ol>
@@ -163,7 +176,7 @@ RAISE Manifesto Website
                     </section>
                 </div>
                 
-                <p class="artifact-timestamp">This site map reflects the story-first approach of the RAISE methodology, with a clear progression from core principles (the manifesto) to practical examples (the projects section) that demonstrate implementation.</p>
+                <p class="artifact-timestamp">This site map reflects the story-first approach of the RAISE methodology, with a clear progression from core principles (the manifesto) to practical examples (the projects section) that demonstrate implementation, and timely updates via the blog.</p>
             </div>
         </div>
     </main>

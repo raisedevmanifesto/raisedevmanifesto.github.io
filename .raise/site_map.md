@@ -30,33 +30,23 @@ RAISE Manifesto Website
 │
 ├── /projects/ (Projects Directory)
 │   │
-│   ├── /index.html (Projects Overview)
+│   ├── /index.html (Projects Overview/Listing)
 │   │   ├── Breadcrumb Navigation
-│   │   ├── Introduction
-│   │   └── Project Cards
-│   │       ├── RAISE Manifesto Website
-│   │       └── [Future Projects]
+│   │   ├── Introduction/Description of Projects
+│   │   └── Project Entries (Title, Description, Summary, Link to full project)
 │   │
-│   └── /manifesto-site/ (RAISE Manifesto Website Project)
-│        ├── /index.html (Project Overview)
-│        │   ├── Breadcrumb Navigation
-│        │   ├── Sidebar Navigation to Artifacts
-│        │   ├── Project Summary
-│        │   ├── Key Features
-│        │   ├── Development Timeline
-│        │   ├── Artifact Navigation Cards
-│        │   └── Repository Link
-│        │
-│        ├── /vision/ (Vision Document)
-│        │   └── index.html
-│        ├── /values/ (Values Document)
-│        │   └── index.html
-│        ├── /stories/ (User Stories)
-│        │   └── index.html
-│        ├── /sitemap/ (Site Map)
-│        │   └── index.html
-│        └── /architecture/ (Architecture Decisions)
-│            └── index.html
+│   └── /project-folders/ (Individual Project Implementations)
+│        ├── /project-name-1/
+│        │   ├── index.html (Project Overview)
+│        │   ├── /vision/ (Vision Document)
+│        │   ├── /values/ (Values Document)
+│        │   ├── /stories/ (User Stories)
+│        │   ├── /designs/ (Design Decisions)
+│        │   ├── /sitemap/ (Site Map)
+│        │   └── /architecture/ (Architecture Decisions)
+│        └── /project-name-2/
+│            ├── index.html (Project Overview)
+│            └── [Similar RAISE artifact structure]
 │
 └── /blog/ (Blog Directory)
     │

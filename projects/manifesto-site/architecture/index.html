@@ -29,7 +29,7 @@
     <a href="#artifact-content" class="skip-link visually-hidden">Skip to content</a>
     <header>
         <h1>Architecture Decisions - RAISE Manifesto Website</h1>
-        <p class="version">Last updated: <time datetime="2025-05-16">May 16, 2025</time></p>
+        <p class="version">Last updated: <time datetime="2025-05-23">May 23, 2025</time></p>
     </header>
 
     <main id="artifact-content" class="project-page">
@@ -71,62 +71,40 @@
                     <p>The following records document key architecture decisions in chronological order:</p>
                     
                     <article class="adr">
-                        <h3>ADR-001: Static Site Generation Approach</h3>
+                        <h3>ADR-001: Host Comments on External Platforms</h3>
                         
                         <div class="adr-metadata">
                             <p><strong>Status:</strong> Accepted</p>
-                            <p><strong>Date:</strong> 2025-05-01</p>
-                            <p><strong>Deciders:</strong> RAISE Initiative Team</p>
+                            <p><strong>Date:</strong> 2025-05-15</p>
                         </div>
                         
                         <section class="adr-section">
                             <h4>Context</h4>
-                            <p>The RAISE Manifesto website needs to be simple, accessible, and maintainable while demonstrating the methodology's principles. The site primarily serves content with minimal interactivity needs.</p>
+                            <p>We want to maximize accessibility and encourage open feedback on the RAISE Manifesto, while keeping the site as simple as possible. Platforms like Reddit and Substack already offer robust, familiar commenting and discussion tools.</p>
                         </section>
                         
                         <section class="adr-section">
                             <h4>Decision</h4>
-                            <p>We will implement the site as a static HTML/CSS website without a JavaScript framework or content management system.</p>
-                        </section>
-                        
-                        <section class="adr-section">
-                            <h4>Rationale</h4>
-                            <ul>
-                                <li><strong>Alignment with Values:</strong> Simplicity value dictates using the simplest solution that meets our needs</li>
-                                <li><strong>Performance:</strong> Static sites offer excellent performance with minimal loading time</li>
-                                <li><strong>Longevity:</strong> Static HTML/CSS has proven stability over decades</li>
-                                <li><strong>Accessibility:</strong> Easier to ensure baseline accessibility without JavaScript dependencies</li>
-                                <li><strong>Security:</strong> Minimal attack surface with no server-side processing</li>
-                                <li><strong>Learning Curve:</strong> Lower barrier to entry for contributors across technical levels</li>
-                            </ul>
+                            <p>We will not build a native commenting system into the RAISE Manifesto site. Instead, we will share the site on platforms like Reddit and Substack, and direct visitors to join the discussion there. Links to these discussions will be included on the site.</p>
                         </section>
                         
                         <section class="adr-section">
                             <h4>Consequences</h4>
-                            <p><strong>Positive:</strong></p>
                             <ul>
-                                <li>Faster initial development and deployment</li>
-                                <li>Simpler maintenance</li>
-                                <li>Greater longevity and future-proofing</li>
-                                <li>Easier to demonstrate the actual HTML structure</li>
-                            </ul>
-                            
-                            <p><strong>Negative:</strong></p>
-                            <ul>
-                                <li>Some content duplication across pages</li>
-                                <li>More manual updates when making site-wide changes</li>
-                                <li>Limited interactivity without JavaScript</li>
+                                <li>The site remains extremely simple and easy to maintain.</li>
+                                <li>Readers can participate in discussion using platforms they already know.</li>
+                                <li>We lose some control over the discussion space, but gain reach and ease.</li>
+                                <li>If needs change, we can revisit the decision and add native comments later.</li>
                             </ul>
                         </section>
                     </article>
                     
                     <article class="adr">
-                        <h3>ADR-002: CSS Architecture</h3>
+                        <h3>ADR-002: Use GitHub Pages for Site Hosting</h3>
                         
                         <div class="adr-metadata">
                             <p><strong>Status:</strong> Accepted</p>
-                            <p><strong>Date:</strong> 2025-05-03</p>
-                            <p><strong>Deciders:</strong> RAISE Initiative Team</p>
+                            <p><strong>Date:</strong> 2025-05-15</p>
                         </div>
                         
                         <section class="adr-section">
